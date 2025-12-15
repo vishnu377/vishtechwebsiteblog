@@ -1,0 +1,124 @@
+<!-- Node Port Error Blog -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Write your article description here.">
+    <title>Your Post Title Here - Vishtech Fixes</title>
+    
+    <!-- CSS Links (Note: ../../ laga hai kyunki hum 2 folder andar hain) -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <!-- Prism CSS for colorful code -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- 1. Dynamic Header (Javascript se aayega) -->
+    <div id="dynamic-header"></div>
+
+    <!-- 2. Main Content Wrapper -->
+    <div class="content-wrapper">
+        
+        <!-- LEFT COLUMN: ARTICLE -->
+        <article class="main-article">
+            
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <!-- Links me ../../ lagana zaroori hai -->
+                <a href="../../index.html">Home</a> &gt; 
+                <a href="../../topics.html#react">React</a> &gt; 
+                <span>Current Post Title</span>
+            </div>
+
+            <header class="post-header" style="border:none;">
+                <h1 class="post-title">Write Your Error Title Here</h1>
+                <div class="post-meta">
+                    <span>By Vishwas</span> &bull; <span>Updated: Dec 2024</span>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <div class="toc">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#intro">Understanding the Error</a></li>
+                    <li><a href="#solution">The Solution</a></li>
+                </ul>
+            </div>
+
+            <!-- Ad Slot -->
+            <div class="ad-slot">AdSense - Top</div>
+
+            <!-- CONTENT SHURU -->
+            <p id="intro">Write your problem description here...</p>
+
+            <h3>The Wrong Code ❌</h3>
+            <pre><code class="language-jsx">
+// Paste your wrong code here
+const test = "error";
+            </code></pre>
+
+            <h3 id="solution">The Solution ✅</h3>
+            <p>Write your solution here...</p>
+
+            <pre><code class="language-jsx">
+// Paste your fixed code here
+const test = "fixed";
+            </code></pre>
+            <!-- CONTENT KHATAM -->
+
+            <hr style="margin: 40px 0; border: 0; border-top: 1px solid #e2e8f0;">
+            <p>Did this fix your issue? Check out more solutions in the sidebar.</p>
+
+        </article>
+
+        <!-- RIGHT COLUMN: SIDEBAR -->
+        <aside class="sidebar">
+            
+            <!-- Ad Slot -->
+            <div class="widget">
+                <div class="ad-slot" style="height: 300px; margin:0;">Sidebar Ad</div>
+            </div>
+
+            <!-- Related Links -->
+            <div class="widget">
+                <h3 class="widget-title">Recent React Fixes</h3>
+                <ul class="widget-links" style="list-style: none;">
+                    <!-- Links me ../../ lagana mat bhulna -->
+                    <li><a href="object-error.html">Fix: Object Error</a></li>
+                    <li><a href="../node/port-error.html">Node: Port Error</a></li>
+                </ul>
+            </div>
+
+            <!-- Sticky Ad -->
+            <div class="widget" style="position: sticky; top: 20px;">
+                <div class="ad-slot" style="height: 600px; margin:0;">Vertical Ad</div>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- 3. Dynamic Footer (Javascript se aayega) -->
+    <div id="dynamic-footer"></div>
+
+    <!-- SCRIPTS (Note: ../../ laga hai) -->
+    <script src="../../assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-jsx.min.js"></script>
+
+    <!-- Header/Footer Loading Logic -->
+    <script>
+        // ⚠️ 2 pass karna zaroori hai kyunki hum 'posts/react/' me hain
+        loadHeader(2); 
+        loadFooter(2);
+    </script>
+
+</body>
+</html>

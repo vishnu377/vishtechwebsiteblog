@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Solutions - Vishtech Fixes</title>
+    <!-- CSS Link (Assets folder se) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- 1. DYNAMIC HEADER -->
+    <div id="dynamic-header"></div>
+
+    <!-- 2. HERO SECTION -->
+    <header class="hero" style="padding: 40px 20px;">
+        <h1>Node.js & Backend Errors</h1>
+        <p>Server crashes, API failures, and database connection fixes.</p>
+        
+        <!-- Google Search -->
+        <div class="search-box-google" style="max-width: 700px; margin: 20px auto 0;">
+            <script async src="https://cse.google.com/cse.js?cx=25d8f6c16f9444bb8"></script>
+            <div class="gcse-search"></div>
+        </div>
+    </header>
+
+    <!-- 3. MAIN CONTENT (Card Grid) -->
+    <main class="container">
+        <div class="grid">
+            
+            <!-- Node Card 1 -->
+            <!-- Note: Link aapke screenshot wale filename ke hisaab se hai -->
+            <a href="posts/node/node-port-error.html" class="card">
+                <div>
+                    <div class="card-header">
+                        <span class="badge node">Node.js</span>
+                        <span style="font-size:12px; color:#94a3b8;">1 min read</span>
+                    </div>
+                    <h2>Error: listen EADDRINUSE: address already in use :::3000</h2>
+                    <p>Your server port is busy. Learn how to kill the process instantly.</p>
+                </div>
+                <div class="read-more">View Solution →</div>
+            </a>
+
+            <!-- Future Card 2 (Jab naya likhoge tab comment hata dena) -->
+            <!-- 
+            <a href="posts/node/mongo-error.html" class="card">
+                <div>
+                    <div class="card-header">
+                        <span class="badge node">MongoDB</span>
+                        <span style="font-size:12px; color:#94a3b8;">2 min read</span>
+                    </div>
+                    <h2>Mongoose Connection Error</h2>
+                    <p>Database connection failed...</p>
+                </div>
+                <div class="read-more">View Solution →</div>
+            </a> 
+            -->
+
+        </div>
+    </main>
+
+    <!-- 4. DYNAMIC FOOTER -->
+    <div id="dynamic-footer"></div>
+
+    <!-- 5. SCRIPTS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // 0 pass kar rahe hain kyunki ye root folder me hai
+        loadHeader(0); 
+        loadFooter(0);
+    </script>
+
+</body>
+</html>

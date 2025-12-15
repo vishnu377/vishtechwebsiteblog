@@ -1,0 +1,84 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishtech Fixes - Developer Solutions</title>
+    
+    <!-- ✅ CHANGE 1: CSS Links ab 'assets' folder se aayenge -->
+    <!-- Agar bootstrap use kar rahe ho to ye line rakhna, warna hata dena -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- ✅ CHANGE 2: Navbar Hardcode nahi hai, ye ID lagayi hai -->
+    <!-- JavaScript isme automatic Navbar bhar dega -->
+    <div id="dynamic-header"></div>
+
+
+    <!-- ✅ CHANGE 3: Hero Section (Search) waisa hi rahega -->
+    <header class="hero">
+        <h1>What error are you facing today?</h1>
+        <p>Browse 1,500+ solutions for Web Development bugs.</p>
+        
+        <!-- Google Search Code -->
+        <div class="search-box-google" style="max-width: 700px; margin: 0 auto;">
+            <script async src="https://cse.google.com/cse.js?cx=25d8f6c16f9444bb8"></script>
+            <div class="gcse-search"></div>
+        </div>
+    </header>
+
+
+    <!-- ✅ CHANGE 4: Main Content Area -->
+    <main class="container">
+        <h3 class="section-title">Latest Solutions</h3>
+        
+        <!-- Yahan se humne purane Hardcoded Cards HATA diye hain -->
+        <!-- Ab ye khaali div hai, JavaScript isme cards bharega -->
+        <div id="blog-container" class="grid">
+            <!-- Loading... -->
+        </div>
+    </main>
+
+
+    <!-- ✅ CHANGE 5: Footer Hardcode nahi hai -->
+    <div id="dynamic-footer"></div>
+
+
+    <!-- ✅ CHANGE 6: Scripts Load karna zaroori hai -->
+    
+    <!-- Step A: Blog ka Data load karo -->
+    <script src="assets/js/posts-db.js"></script>
+    
+    <!-- Step B: Logic load karo (Header/Footer/Cards banane wala magic) -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Step C: Commands run karo -->
+    <script>
+        // 0 pass kiya hai kyunki ye Home Page (Root) par hai
+        loadHeader(0);       
+        loadFooter(0); 
+        
+        // Ye function 'posts-db.js' se data lekar upar cards banayega
+        loadRecentPosts();   
+    </script>
+
+</body>
+</html>

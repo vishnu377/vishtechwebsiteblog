@@ -1,0 +1,108 @@
+<!-- All Topics Page -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Topics & Solutions - Vishtech Fixes</title>
+    
+    <!-- CSS Link (Assets folder se) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- 1. DYNAMIC HEADER -->
+    <div id="dynamic-header"></div>
+
+    <!-- 2. HERO SECTION (Search & Tags) -->
+    <header class="topics-hero">
+        <h1>Browse by Topic</h1>
+        <p>Find solutions for specific technologies and frameworks.</p>
+        
+        <!-- Google Search Code -->
+        <div class="search-box-google" style="max-width: 700px; margin: 20px auto 0;">
+            <script async src="https://cse.google.com/cse.js?cx=25d8f6c16f9444bb8"></script>
+            <div class="gcse-search"></div>
+        </div>
+
+        <!-- Tag Cloud -->
+        <div class="tag-cloud">
+            <a href="#react" class="tag">React.js</a>
+            <a href="#node" class="tag">Node.js</a>
+            <a href="#js" class="tag">JavaScript</a>
+            <a href="#css" class="tag">CSS</a>
+            <a href="#git" class="tag">Git & GitHub</a>
+            <a href="#aws" class="tag">AWS</a>
+            <a href="#mongodb" class="tag">MongoDB</a>
+            <a href="#nextjs" class="tag">Next.js</a>
+        </div>
+    </header>
+
+    <!-- 3. MAIN CONTENT (Topic Lists) -->
+    <main class="container">
+        
+        <!-- React Section -->
+        <section id="react" class="topic-section">
+            <div class="topic-header">
+                <h2 class="topic-title">React.js Solutions</h2>
+                <span class="topic-count">2 Articles</span>
+            </div>
+            <div class="article-list">
+                <!-- Links ko posts folder ke hisaab se update kiya hai -->
+                <a href="posts/react/object-error.html" class="article-link">📄 Fix "Objects are not valid as a React child"</a>
+                <a href="posts/react/useeffect-warning.html" class="article-link">📄 Solved: useEffect dependency array missing warning</a>
+                
+                <!-- Jab naya post banao, yahan add karna -->
+            </div>
+        </section>
+
+        <!-- Node Section -->
+        <section id="node" class="topic-section">
+            <div class="topic-header">
+                <h2 class="topic-title">Node.js & Backend</h2>
+                <span class="topic-count">1 Article</span>
+            </div>
+            <div class="article-list">
+                <a href="posts/node/port-error.html" class="article-link">📄 Error: listen EADDRINUSE: address already in use</a>
+            </div>
+        </section>
+
+        <!-- AWS Section -->
+        <section id="aws" class="topic-section">
+            <div class="topic-header">
+                <h2 class="topic-title">AWS & Cloud</h2>
+                <span class="topic-count">1 Article</span>
+            </div>
+            <div class="article-list">
+                <a href="posts/aws/s3-error.html" class="article-link">📄 Fix AWS S3 "Access Denied" on public bucket</a>
+            </div>
+        </section>
+
+        <!-- JS Section (Example) -->
+        <section id="js" class="topic-section">
+            <div class="topic-header">
+                <h2 class="topic-title">JavaScript</h2>
+                <span class="topic-count">0 Articles</span>
+            </div>
+            <div class="article-list">
+                <p style="color:#64748b; font-style:italic;">No articles yet. Coming soon!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 4. DYNAMIC FOOTER -->
+    <div id="dynamic-footer"></div>
+
+    <!-- 5. SCRIPTS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // 0 pass kar rahe hain kyunki ye file root folder me hai
+        loadHeader(0); 
+        loadFooter(0);
+    </script>
+
+</body>
+</html>

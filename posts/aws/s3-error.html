@@ -1,0 +1,153 @@
+<!-- AWS S3 Error Blog -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Fix AWS S3 403 Access Denied Error on public buckets. Copy the correct JSON Bucket Policy to allow public read access easily.">
+    
+    <title>How to fix AWS S3 "Access Denied" on public bucket - Vishtech Fixes</title>
+    
+    <!-- CSS Links (2 level deep: ../../) -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <!-- Prism CSS (Code Coloring) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- 1. DYNAMIC HEADER -->
+    <div id="dynamic-header"></div>
+
+    <!-- 2. MAIN CONTENT WRAPPER -->
+    <div class="content-wrapper">
+        
+        <!-- LEFT: ARTICLE -->
+        <article class="main-article">
+            
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <a href="../../index.html">Home</a> &gt; 
+                <a href="../../topics.html#aws">AWS</a> &gt; 
+                <span>S3 Access Denied</span>
+            </div>
+
+            <!-- Post Header -->
+            <header class="post-header" style="border:none;">
+                <h1 class="post-title">How to fix AWS S3 "Access Denied" on public bucket</h1>
+                <div class="post-meta">
+                    <span>By Vishwas</span> &bull; <span>Updated: Dec 2024</span>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <div class="toc">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#intro">Understanding the Error</a></li>
+                    <li><a href="#step1">Step 1: Unblock Public Access</a></li>
+                    <li><a href="#step2">Step 2: Add Bucket Policy (JSON)</a></li>
+                </ul>
+            </div>
+
+            <!-- Ad Slot (Top) -->
+            <div class="ad-slot">AdSense - In Article Top</div>
+
+            <!-- Introduction -->
+            <p id="intro">If you are trying to access a file uploaded to your AWS S3 bucket via the browser URL, but you see an <strong>"Access Denied"</strong> or <strong>403 Forbidden</strong> XML error, it means your bucket permissions are not set to public.</p>
+            
+            <p>By default, all S3 buckets are private for security reasons. To make them public (for a website or image hosting), you need to do two things.</p>
+
+            <h3 id="step1" style="margin-top:30px;">Step 1: Uncheck "Block Public Access" 🔓</h3>
+            <p>1. Go to your S3 Console and open your bucket.</p>
+            <p>2. Click on the <strong>Permissions</strong> tab.</p>
+            <p>3. Scroll down to <strong>Block public access (bucket settings)</strong> and click Edit.</p>
+            <p>4. <strong>Uncheck</strong> "Block all public access".</p>
+            <p>5. Click Save Changes and type "confirm" in the box.</p>
+
+            <!-- Image Placeholder -->
+            <img src="../../assets/images/s3-settings.png" alt="AWS S3 Block Public Access Settings" class="post-image" onerror="this.style.display='none'">
+
+            <!-- Ad Slot (Middle) -->
+            <div class="ad-slot">AdSense - In Article Middle</div>
+
+            <h3 id="step2" style="margin-top:30px;">Step 2: Add Bucket Policy (The Main Fix) 📝</h3>
+            <p>Even after unblocking, you need to explicitly tell AWS to allow anyone to read the files. We do this using a JSON policy.</p>
+
+            <p>1. Still in the <strong>Permissions</strong> tab, scroll down to <strong>Bucket policy</strong>.</p>
+            <p>2. Click Edit and paste the following JSON code:</p>
+
+            <!-- JSON Code Block -->
+            <pre><code class="language-json">
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/*"
+        }
+    ]
+}
+            </code></pre>
+
+            <p><strong>⚠️ Important:</strong> Replace <code>YOUR-BUCKET-NAME</code> with the actual name of your bucket (e.g., <code>vishtech-images/*</code>).</p>
+            <p>Click <strong>Save changes</strong>. Now your files should be accessible publicly!</p>
+
+            <hr style="margin: 40px 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+            <p>Did this fix your issue? Check out more cloud solutions in the sidebar.</p>
+            
+        </article>
+
+        <!-- RIGHT: SIDEBAR -->
+        <aside class="sidebar">
+            
+            <!-- Ad Slot -->
+            <div class="widget">
+                <div class="ad-slot" style="height: 300px; margin:0;">AdSense - Sidebar Ad</div>
+            </div>
+
+            <!-- Recent Posts -->
+            <div class="widget">
+                <h3 class="widget-title">Recent Solutions</h3>
+                <ul class="widget-links" style="list-style: none;">
+                    <!-- Cross Linking to other categories -->
+                    <li><a href="../react/object-error.html">React: Fix Object Error</a></li>
+                    <li><a href="../node/port-error.html">Node: Kill Port 3000</a></li>
+                    <li><a href="../react/useeffect-warning.html">React: useEffect Warning</a></li>
+                </ul>
+            </div>
+
+            <!-- Sticky Ad -->
+            <div class="widget" style="position: sticky; top: 20px;">
+                <div class="ad-slot" style="height: 600px; margin:0;">AdSense - Vertical Banner</div>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- 3. DYNAMIC FOOTER -->
+    <div id="dynamic-footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="../../assets/js/main.js"></script>
+    
+    <!-- Prism JS for code highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!-- JSON language support -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+
+    <script>
+        // ⚠️ 2 pass karna zaroori hai (posts/aws/)
+        loadHeader(2); 
+        loadFooter(2);
+    </script>
+
+</body>
+</html>

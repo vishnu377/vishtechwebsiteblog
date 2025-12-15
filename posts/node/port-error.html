@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Fix Error: listen EADDRINUSE: address already in use :::3000. Learn how to kill the busy port process on Windows, Mac, and Linux.">
+    
+    <title>Error: listen EADDRINUSE: address already in use :::3000 - Vishtech Fixes</title>
+    
+    <!-- CSS Links (2 level deep: ../../) -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <!-- Prism CSS (Code Coloring) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- 1. DYNAMIC HEADER -->
+    <div id="dynamic-header"></div>
+
+    <!-- 2. MAIN CONTENT WRAPPER -->
+    <div class="content-wrapper">
+        
+        <!-- LEFT: ARTICLE -->
+        <article class="main-article">
+            
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <a href="../../index.html">Home</a> &gt; 
+                <a href="../../node.html">Node.js</a> &gt; 
+                <span>Port Error Fix</span>
+            </div>
+
+            <!-- Post Header -->
+            <header class="post-header" style="border:none;">
+                <h1 class="post-title">Error: listen EADDRINUSE: address already in use :::3000</h1>
+                <div class="post-meta">
+                    <span>By Vishwas</span> &bull; <span>Updated: Dec 2024</span>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <div class="toc">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#intro">Understanding the Error</a></li>
+                    <li><a href="#windows">Fix on Windows</a></li>
+                    <li><a href="#mac">Fix on Mac/Linux</a></li>
+                    <li><a href="#npm">Quick Fix (NPM Package)</a></li>
+                </ul>
+            </div>
+
+            <!-- Ad Slot (Top) -->
+            <div class="ad-slot">AdSense - In Article Top</div>
+
+            <!-- Introduction -->
+            <p id="intro">If you see the error <strong>"listen EADDRINUSE: address already in use :::3000"</strong>, it means your Node.js server is trying to start on port 3000, but that port is already occupied by another running process.</p>
+            
+            <p>This usually happens when you restart your server but the old process didn't close properly.</p>
+
+            <h3 id="windows" style="margin-top:30px;">Solution 1: Fix on Windows 🪟</h3>
+            <p>Open your Command Prompt (cmd) and run these commands:</p>
+
+            <p><strong>Step 1: Find the Process ID (PID)</strong></p>
+            <pre><code class="language-bash">
+netstat -ano | findstr :3000
+            </code></pre>
+            <p>You will see a list. Note down the number at the end (e.g., <code>1234</code>).</p>
+
+            <p><strong>Step 2: Kill the Process</strong></p>
+            <pre><code class="language-bash">
+taskkill /PID 1234 /F
+            </code></pre>
+            <p>Replace <code>1234</code> with your actual PID.</p>
+
+            <!-- Ad Slot (Middle) -->
+            <div class="ad-slot">AdSense - In Article Middle</div>
+
+            <h3 id="mac" style="margin-top:30px;">Solution 2: Fix on Mac / Linux 🍎🐧</h3>
+            <p>Open your Terminal and run:</p>
+
+            <p><strong>Step 1: Find the PID</strong></p>
+            <pre><code class="language-bash">
+lsof -i :3000
+            </code></pre>
+
+            <p><strong>Step 2: Kill the Process</strong></p>
+            <pre><code class="language-bash">
+kill -9 <PID>
+# Example: kill -9 1234
+            </code></pre>
+
+            <h3 id="npm">Solution 3: Quick Fix (NPM) ⚡</h3>
+            <p>If you don't want to run commands manually, you can use <code>npx</code> to kill the port instantly:</p>
+             <pre><code class="language-bash">
+npx kill-port 3000
+            </code></pre>
+
+            <hr style="margin: 40px 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+            <p>Did this fix your issue? Check out more Node.js solutions in the sidebar.</p>
+            
+        </article>
+
+        <!-- RIGHT: SIDEBAR -->
+        <aside class="sidebar">
+            
+            <!-- Ad Slot -->
+            <div class="widget">
+                <div class="ad-slot" style="height: 300px; margin:0;">AdSense - Sidebar Ad</div>
+            </div>
+
+            <!-- Recent Posts -->
+            <div class="widget">
+                <h3 class="widget-title">Recent Solutions</h3>
+                <ul class="widget-links" style="list-style: none;">
+                    <!-- Sibling Links (Same Folder) -->
+                    <!-- Agar koi aur node post ho to yahan likhna -->
+                    
+                    <!-- Other Categories (Using ../) -->
+                    <li><a href="../react/object-error.html">React: Fix Object Error</a></li>
+                    <li><a href="../react/useeffect-warning.html">React: useEffect Warning</a></li>
+                    <li><a href="../aws/s3-error.html">AWS: S3 Access Denied</a></li>
+                </ul>
+            </div>
+
+            <!-- Sticky Ad -->
+            <div class="widget" style="position: sticky; top: 20px;">
+                <div class="ad-slot" style="height: 600px; margin:0;">AdSense - Vertical Banner</div>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- 3. DYNAMIC FOOTER -->
+    <div id="dynamic-footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="../../assets/js/main.js"></script>
+    
+    <!-- Prism JS for code highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!-- Bash language support for terminal commands -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+
+    <script>
+        // ⚠️ 2 pass karna zaroori hai (posts/node/)
+        loadHeader(2); 
+        loadFooter(2);
+    </script>
+
+</body>
+</html>
