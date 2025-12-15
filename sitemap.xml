@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <!-- 1. MAIN PAGES -->
+   <url>
+      <loc>https://vishtechwebsiteblog.vercel.app/</loc>
+      <lastmod>2025-12-15</lastmod>
+      <priority>1.00</priority>
+   </url>
+   <url>
+      <loc>https://vishtechwebsiteblog.vercel.app/index.html</loc>
+      <lastmod>2025-12-15</lastmod>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>https://vishtechwebsiteblog.vercel.app/topics.html</loc>
+      <lastmod>2025-12-15</lastmod>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>https://vishtechwebsiteblog.vercel.app/react.html</loc>
+      <lastmod>2025-12-15</lastmod>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>https://vishtechwebsiteblog.vercel.app/node.html</loc>
+      <lastmod>2025-12-15</lastmod>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>https://vishtechwebsiteblog.vercel.app/hire.html</loc>
+      <lastmod>2025-12-15</lastmod>
+      <priority>0.60</priority>
+   </url>
+   <url>
+      <loc>https://vishtechwebsiteblog.vercel.app/about.html</loc>
+      <lastmod>2025-12-15</lastmod>
+      <priority>0.50</priority>
+   </url>
+   <url>
+      <loc>https://vishtechwebsiteblog.vercel.app/privacy.html</loc>
+      <lastmod>2025-12-15</lastmod>
+      <priority>0.30</priority>
+   </url>
+   <url>
+      <loc>https://vishtechwebsiteblog.vercel.app/terms.html</loc>
+      <lastmod>2025-12-15</lastmod>
+      <priority>0.30</priority>
+   </url>
+
+   <!-- 2. BLOG POSTS (Folder Structure ke hisaab se) -->
+   
+   <!-- React Posts -->
+   <url>
+      <loc>https://vishtechwebsiteblog.vercel.app/posts/react/object-error.html</loc>
+      <lastmod>2025-12-15</lastmod>
+      <priority>0.80</priority>
+   </url>
+   <!-- Agar useeffect-warning wala file banaya hai to ye line rakhna, warna hata dena -->
+   <!--
+   <url>
+      <loc>https://vishtechwebsiteblog.vercel.app/posts/react/useeffect-warning.html</loc>
+      <lastmod>2025-12-15</lastmod>
+      <priority>0.80</priority>
+   </url>
+   -->
+
+   <!-- Node Posts -->
+   <url>
+      <loc>https://vishtechwebsiteblog.vercel.app/posts/node/node-port-error.html</loc>
+      <lastmod>2025-12-15</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+   <!-- AWS Posts -->
+   <url>
+      <loc>https://vishtechwebsiteblog.vercel.app/posts/aws/aws-s3-error.html</loc>
+      <lastmod>2025-12-15</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+</urlset>
