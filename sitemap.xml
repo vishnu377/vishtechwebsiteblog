@@ -5,75 +5,72 @@
 
 
 
-
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
    <!-- 1. HOME & TOPICS -->
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>1.00</priority>
    </url>
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/index.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/index.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.80</priority>
    </url>
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/topics.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/topics.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.80</priority>
    </url>
 
    <!-- 2. CATEGORY PAGES (Navbar Links) -->
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/js.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/js.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.80</priority>
    </url>
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/react.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/react.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.80</priority>
    </url>
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/node.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/node.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.80</priority>
    </url>
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/aws.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/aws.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.80</priority>
    </url>
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/interview.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/interview.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.80</priority>
    </url>
 
    <!-- 3. LEGAL & CONTACT -->
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/about.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/about.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.50</priority>
    </url>
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/privacy.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/privacy.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.30</priority>
    </url>
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/terms.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/terms.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.30</priority>
    </url>
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/hire.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/hire.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.40</priority>
    </url>
 
@@ -81,36 +78,36 @@
    
    <!-- JavaScript -->
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/posts/js/var-let-const.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/posts/js/var-let-const.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.70</priority>
    </url>
 
    <!-- React -->
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/posts/react/object-error.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/posts/react/object-error.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.70</priority>
    </url>
 
    <!-- Node -->
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/posts/node/node-port-error.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/posts/node/node-port-error.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.70</priority>
    </url>
 
    <!-- AWS -->
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/posts/aws/aws-s3-error.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/posts/aws/aws-s3-error.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.70</priority>
    </url>
 
    <!-- Interviews -->
    <url>
-      <loc>https://vishtechwebsiteblog.vercel.app/posts/interview/react-questions.html</loc>
-      <lastmod>2024-12-16</lastmod>
+      <loc>https://vishtechfixes.com/posts/interview/react-questions.html</loc>
+      <lastmod>2024-12-17</lastmod>
       <priority>0.70</priority>
    </url>
 
