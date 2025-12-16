@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Top 20 React.js Interview Questions and Answers for 2025. Prepare for your Frontend Developer interview with these commonly asked questions.">
+    
+    <title>Top 20 React.js Interview Questions & Answers (2025) - Vishtech Fixes</title>
+    
+    <!-- CSS Links (2 level deep: ../../) -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <!-- Prism CSS (Code Coloring) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- 1. DYNAMIC HEADER -->
+    <div id="dynamic-header"></div>
+
+    <!-- 2. MAIN CONTENT WRAPPER -->
+    <div class="content-wrapper">
+        
+        <!-- LEFT: ARTICLE -->
+        <article class="main-article">
+            
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <a href="../../index.html">Home</a> &gt; 
+                <a href="../../topics.html#career">Interview Prep</a> &gt; 
+                <span>React QA</span>
+            </div>
+
+            <!-- Post Header -->
+            <header class="post-header" style="border:none;">
+                <h1 class="post-title">Top 20 React.js Interview Questions & Answers (2025)</h1>
+                <div class="post-meta">
+                    <span>By Vishwas</span> &bull; <span>Updated: Dec 2024</span> &bull; <span>10 min read</span>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <div class="toc">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#q1">1. Real DOM vs Virtual DOM</a></li>
+                    <li><a href="#q2">2. What are React Hooks?</a></li>
+                    <li><a href="#q3">3. Difference between State and Props</a></li>
+                    <li><a href="#q4">4. What is Prop Drilling?</a></li>
+                </ul>
+            </div>
+
+            <!-- Ad Slot (Top) -->
+            <div class="ad-slot">AdSense - Top Banner</div>
+
+            <!-- Introduction -->
+            <p>Preparing for a Frontend Developer interview? Here are the most frequently asked React.js questions that you must know.</p>
+
+            <hr style="margin: 30px 0; border-top: 1px solid #e2e8f0;">
+
+            <!-- Q1 -->
+            <h3 id="q1">1. What is the difference between Real DOM and Virtual DOM?</h3>
+            <p>The <strong>Real DOM</strong> is slow because every time something changes, it updates the entire tree structure. The <strong>Virtual DOM</strong> is a lightweight copy of the Real DOM. React uses it to verify what exactly changed and updates only that specific part (Reconciliation).</p>
+
+            <!-- Q2 -->
+            <h3 id="q2" style="margin-top: 40px;">2. What are React Hooks?</h3>
+            <p>Hooks are functions that let you "hook into" React state and lifecycle features from functional components. Before Hooks, we could only use state in Class Components.</p>
+            <p>Common Hooks:</p>
+            <ul>
+                <li><code>useState</code> - For managing state.</li>
+                <li><code>useEffect</code> - For side effects (API calls, timers).</li>
+                <li><code>useContext</code> - For avoiding prop drilling.</li>
+            </ul>
+
+            <!-- Ad Slot (Middle) -->
+            <div class="ad-slot">AdSense - Middle Banner</div>
+
+            <!-- Q3 -->
+            <h3 id="q3" style="margin-top: 40px;">3. What is the difference between State and Props?</h3>
+            <p><strong>State</strong> is internal data managed by the component itself (can be changed). <br>
+            <strong>Props</strong> (Properties) are data passed from a parent component to a child component (cannot be changed by the child).</p>
+
+            <pre><code class="language-jsx">
+// Example of Props
+const Welcome = (props) => {
+  return <h1>Hello, {props.name}</h1>;
+};
+            </code></pre>
+
+            <!-- Q4 -->
+            <h3 id="q4" style="margin-top: 40px;">4. What is Prop Drilling and how to avoid it?</h3>
+            <p>Prop drilling happens when you pass data from a Parent component to a deep Child component through many intermediate components that don't need the data.</p>
+            <p><strong>Solution:</strong> Use <strong>Context API</strong> or state management libraries like <strong>Redux</strong> to share data globally.</p>
+
+            <hr style="margin: 40px 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+            <p><strong>Want more questions?</strong> Check out the Node.js Interview Guide in the sidebar.</p>
+            
+        </article>
+
+        <!-- RIGHT: SIDEBAR -->
+        <aside class="sidebar">
+            
+            <!-- Ad Slot -->
+            <div class="widget">
+                <div class="ad-slot" style="height: 300px; margin:0;">AdSense - Sidebar Ad</div>
+            </div>
+
+            <!-- Related Interview Guides -->
+            <div class="widget">
+                <h3 class="widget-title">More Interview Guides</h3>
+                <ul class="widget-links" style="list-style: none;">
+                    <li><a href="node-questions.html">Node.js Interview QA</a></li>
+                    <li><a href="js-tricky-qa.html">JavaScript Tricky Questions</a></li>
+                    <li><a href="../react/object-error.html">Check React Errors</a></li>
+                </ul>
+            </div>
+
+            <!-- Sticky Ad -->
+            <div class="widget" style="position: sticky; top: 20px;">
+                <div class="ad-slot" style="height: 600px; margin:0;">AdSense - Vertical Banner</div>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- 3. DYNAMIC FOOTER -->
+    <div id="dynamic-footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="../../assets/js/main.js"></script>
+    
+    <!-- Prism JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-jsx.min.js"></script>
+
+    <script>
+        // ⚠️ 2 pass karna zaroori hai (posts/interview/)
+        loadHeader(2); 
+        loadFooter(2);
+    </script>
+
+</body>
+</html>

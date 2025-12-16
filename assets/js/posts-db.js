@@ -33,6 +33,19 @@ const blogPosts = [
         desc: 'Bucket policies can be tricky. Copy this JSON policy to fix public access permission issues.',
         link: 'posts/aws/s3-error.html',
         isNew: false
+    },
+
+
+//
+
+
+    {
+        title: 'Top 20 React.js Interview Questions & Answers (2025)',
+        category: 'Interview',
+        readTime: '10 min',
+        desc: 'Prepare for your Frontend Developer interview with these commonly asked questions about Hooks, DOM, and State.',
+        link: 'posts/interview/react-questions.html',
+        isNew: true
     }
 ];
 
