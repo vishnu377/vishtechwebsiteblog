@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn the difference between var, let, and const in JavaScript. Understand scope, hoisting, and when to use which keyword with examples.">
+    
+    <title>Difference between var, let, and const in JavaScript - Vishtech Fixes</title>
+    
+    <!-- CSS Links (2 level deep) -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <!-- Prism CSS (Code Coloring) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- 1. DYNAMIC HEADER -->
+    <div id="dynamic-header"></div>
+
+    <!-- 2. MAIN CONTENT WRAPPER -->
+    <div class="content-wrapper">
+        
+        <!-- LEFT: ARTICLE -->
+        <article class="main-article">
+            
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <a href="../../index.html">Home</a> &gt; 
+                <a href="../../topics.html#js">JavaScript</a> &gt; 
+                <span>var vs let vs const</span>
+            </div>
+
+            <!-- Post Header -->
+            <header class="post-header" style="border:none;">
+                <h1 class="post-title">Difference between var, let, and const in JavaScript</h1>
+                <div class="post-meta">
+                    <span>By Vishwas</span> &bull; <span>Updated: Dec 2024</span> &bull; <span>5 min read</span>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <div class="toc">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#var">Understanding var (The Old Way)</a></li>
+                    <li><a href="#let">Understanding let (The Modern Way)</a></li>
+                    <li><a href="#const">Understanding const</a></li>
+                    <li><a href="#summary">Summary Table</a></li>
+                </ul>
+            </div>
+
+            <!-- Ad Slot -->
+            <div class="ad-slot">AdSense - Top Banner</div>
+
+            <p id="intro">Before ES6 (2015), JavaScript only had <code>var</code> to declare variables. This caused many bugs due to scoping issues. ES6 introduced <code>let</code> and <code>const</code> to fix these problems. Let's see the differences.</p>
+
+            <!-- VAR SECTION -->
+            <h3 id="var" style="margin-top:30px;">1. var (Function Scoped)</h3>
+            <p><code>var</code> is <strong>function scoped</strong>, meaning if you declare it inside a function, it is available throughout that function. However, it ignores block scopes like <code>if</code> or <code>for</code> loops.</p>
+
+            <pre><code class="language-javascript">
+if (true) {
+  var x = 10;
+}
+console.log(x); // Output: 10 (Wait, what? 😱)
+// Since var ignores the 'if' block, 'x' leaked out to the global scope.
+            </code></pre>
+
+            <p><strong>Problem:</strong> This behavior can accidentally overwrite variables in other parts of your code.</p>
+
+            <!-- LET SECTION -->
+            <h3 id="let" style="margin-top:30px;">2. let (Block Scoped)</h3>
+            <p><code>let</code> is <strong>block scoped</strong>. It only exists inside the curly braces <code>{ }</code> where it was declared.</p>
+
+            <pre><code class="language-javascript">
+if (true) {
+  let y = 20;
+}
+console.log(y); // ❌ Error: y is not defined
+// Ideally, variables should not leak outside their block.
+            </code></pre>
+
+            <!-- Ad Slot -->
+            <div class="ad-slot">AdSense - Middle Banner</div>
+
+            <!-- CONST SECTION -->
+            <h3 id="const" style="margin-top:30px;">3. const (Constant)</h3>
+            <p><code>const</code> is also block-scoped like <code>let</code>, but it **cannot be reassigned**. Use this for values that should not change.</p>
+
+            <pre><code class="language-javascript">
+const PI = 3.14;
+PI = 3.15; // ❌ Error: Assignment to constant variable.
+            </code></pre>
+
+            <p><strong>Note:</strong> If you use <code>const</code> with an Object or Array, you CAN change its properties.</p>
+            <pre><code class="language-javascript">
+const user = { name: "Vish" };
+user.name = "Vishwas"; // ✅ This is allowed!
+            </code></pre>
+
+            <h3 id="summary">Verdict: When to use what?</h3>
+            <ul>
+                <li>Always prefer <strong><code>const</code></strong> by default.</li>
+                <li>Use <strong><code>let</code></strong> only if you need to update the value later (like in loops).</li>
+                <li>Avoid <strong><code>var</code></strong> completely in modern JavaScript.</li>
+            </ul>
+
+            <hr style="margin: 40px 0; border: 0; border-top: 1px solid #e2e8f0;">
+            <p>Preparing for interviews? Check out React questions in the sidebar.</p>
+
+        </article>
+
+        <!-- RIGHT: SIDEBAR -->
+        <aside class="sidebar">
+            
+            <div class="widget">
+                <div class="ad-slot" style="height: 300px; margin:0;">AdSense - Sidebar</div>
+            </div>
+
+            <div class="widget">
+                <h3 class="widget-title">Related Topics</h3>
+                <ul class="widget-links" style="list-style: none;">
+                    <li><a href="../interview/react-questions.html">React Interview Questions</a></li>
+                    <li><a href="../node/node-port-error.html">Node.js Common Errors</a></li>
+                    <li><a href="../react/object-error.html">React Error Fixes</a></li>
+                </ul>
+            </div>
+
+            <div class="widget" style="position: sticky; top: 20px;">
+                <div class="ad-slot" style="height: 600px; margin:0;">AdSense - Vertical</div>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- 3. DYNAMIC FOOTER -->
+    <div id="dynamic-footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="../../assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+    <script>
+        // ⚠️ 2 pass karna zaroori hai (posts/js/)
+        loadHeader(2); 
+        loadFooter(2);
+    </script>
+
+</body>
+</html>

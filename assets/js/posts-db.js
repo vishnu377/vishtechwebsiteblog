@@ -15,6 +15,16 @@ const blogPosts = [
         isNew: true
     },
 
+
+    //---- post js ------
+  {
+        title: 'Difference between var, let, and const in JavaScript - Vishtech Fixes',
+        category: 'js',
+        readTime: '1 min',
+        desc: 'Your server port is busy. Learn how to kill the process and restart your server instantly.',
+        link: 'posts/js/var-let-const.html',
+        isNew: true
+    },
     // --- POST 2: Node Port Error ---
     {
         title: 'Error: listen EADDRINUSE: address already in use :::3000',
