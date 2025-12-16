@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-   <!-- 1. HOME & TOPICS -->
    <url>
       <loc>https://vishtechfixes.com/</loc>
       <lastmod>2024-12-17</lastmod>
@@ -24,8 +15,6 @@
       <lastmod>2024-12-17</lastmod>
       <priority>0.80</priority>
    </url>
-
-   <!-- 2. CATEGORY PAGES (Navbar Links) -->
    <url>
       <loc>https://vishtechfixes.com/js.html</loc>
       <lastmod>2024-12-17</lastmod>
@@ -51,8 +40,6 @@
       <lastmod>2024-12-17</lastmod>
       <priority>0.80</priority>
    </url>
-
-   <!-- 3. LEGAL & CONTACT -->
    <url>
       <loc>https://vishtechfixes.com/about.html</loc>
       <lastmod>2024-12-17</lastmod>
@@ -73,42 +60,29 @@
       <lastmod>2024-12-17</lastmod>
       <priority>0.40</priority>
    </url>
-
-   <!-- 4. BLOG POSTS (Detailed Articles) -->
-   
-   <!-- JavaScript -->
    <url>
       <loc>https://vishtechfixes.com/posts/js/var-let-const.html</loc>
       <lastmod>2024-12-17</lastmod>
       <priority>0.70</priority>
    </url>
-
-   <!-- React -->
    <url>
       <loc>https://vishtechfixes.com/posts/react/object-error.html</loc>
       <lastmod>2024-12-17</lastmod>
       <priority>0.70</priority>
    </url>
-
-   <!-- Node -->
    <url>
       <loc>https://vishtechfixes.com/posts/node/node-port-error.html</loc>
       <lastmod>2024-12-17</lastmod>
       <priority>0.70</priority>
    </url>
-
-   <!-- AWS -->
    <url>
       <loc>https://vishtechfixes.com/posts/aws/aws-s3-error.html</loc>
       <lastmod>2024-12-17</lastmod>
       <priority>0.70</priority>
    </url>
-
-   <!-- Interviews -->
    <url>
       <loc>https://vishtechfixes.com/posts/interview/react-questions.html</loc>
       <lastmod>2024-12-17</lastmod>
       <priority>0.70</priority>
    </url>
-
 </urlset>
