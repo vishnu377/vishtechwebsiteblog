@@ -4,7 +4,21 @@
 
 
 const blogPosts = [
-    // --- POST 1: React Object Error ---
+
+
+     //---- post1 javascript ------
+  {
+        title: 'Difference between var, let, and const in JavaScript - Vishtech Fixes',
+        category: 'JavaScript',
+        readTime: '1 min',
+        desc: 'Your server port is busy. Learn how to kill the process and restart your server instantly.',
+        link: 'posts/javascript/var-let-const.html',
+        isNew: true
+    },
+
+
+
+    // --- POST 2: React Object Error ---
     {
         title: 'How to fix "Objects are not valid as a React child" error',
         category: 'React.js',
@@ -16,16 +30,8 @@ const blogPosts = [
     },
 
 
-    //---- post js ------
-  {
-        title: 'Difference between var, let, and const in JavaScript - Vishtech Fixes',
-        category: 'JavaScript',
-        readTime: '1 min',
-        desc: 'Your server port is busy. Learn how to kill the process and restart your server instantly.',
-        link: 'posts/javascript/var-let-const.html',
-        isNew: true
-    },
-    // --- POST 2: Node Port Error ---
+    
+    // --- POST 3: Node js  ---
     {
         title: 'Error: listen EADDRINUSE: address already in use :::3000',
         category: 'Node.js',
@@ -35,20 +41,10 @@ const blogPosts = [
         isNew: true
     },
 
-    // --- POST 3: AWS Error (Example) ---
-    {
-        title: 'How to fix AWS S3 "Access Denied" on public bucket',
-        category: 'AWS',
-        readTime: '4 min',
-        desc: 'Bucket policies can be tricky. Copy this JSON policy to fix public access permission issues.',
-        link: 'posts/aws/s3-error.html',
-        isNew: false
-    },
-
-
-//
-
-
+    
+    
+    // --- POST 4: interwives (Example) ---
+   
     {
         title: 'Top 20 React.js Interview Questions & Answers (2025)',
         category: 'Interview',

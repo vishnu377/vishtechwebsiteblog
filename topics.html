@@ -1,4 +1,13 @@
-<!-- All Topics Page -->
+
+
+
+
+
+
+
+
+
+
 
 
 <!DOCTYPE html>
@@ -6,9 +15,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Topics & Solutions - Vishtech Fixes</title>
-    
-    <!-- CSS Link (Assets folder se) -->
+    <title>Browse All Topics - Vishtech Fixes</title>
+    <!-- CSS Link -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -16,109 +24,88 @@
     <!-- 1. DYNAMIC HEADER -->
     <div id="dynamic-header"></div>
 
-    <!-- 2. HERO SECTION (Search & Tags) -->
+    <!-- 2. HERO SECTION -->
     <header class="topics-hero">
-        <h1>Browse by Topic</h1>
-        <p>Find solutions for specific technologies and frameworks.</p>
+        <h1>Explore Technologies</h1>
+        <p>Select a topic to view all tutorials and solutions.</p>
         
-        <!-- Google Search Code -->
+        <!-- Google Search -->
         <div class="search-box-google" style="max-width: 700px; margin: 20px auto 0;">
             <script async src="https://cse.google.com/cse.js?cx=25d8f6c16f9444bb8"></script>
             <div class="gcse-search"></div>
         </div>
-
-        <!-- Tag Cloud -->
-        <div class="tag-cloud">
-            <a href="#react" class="tag">React.js</a>
-            <a href="#node" class="tag">Node.js</a>
-            <a href="#js" class="tag">JavaScript</a>
-            <a href="#css" class="tag">CSS</a>
-            <a href="#git" class="tag">Git & GitHub</a>
-            <a href="#aws" class="tag">AWS</a>
-            <a href="#mongodb" class="tag">MongoDB</a>
-            <a href="#nextjs" class="tag">Next.js</a>
-        </div>
     </header>
 
-    <!-- 3. MAIN CONTENT (Topic Lists) -->
+    <!-- 3. CATEGORY HUB (Yahan Categories ke Cards hain) -->
     <main class="container">
-        
-        <!-- React Section -->
-        <section id="react" class="topic-section">
-            <div class="topic-header">
-                <h2 class="topic-title">React.js Solutions</h2>
-                <span class="topic-count">2 Articles</span>
-            </div>
-            <div class="article-list">
-                <!-- Links ko posts folder ke hisaab se update kiya hai -->
-                <a href="posts/react/object-error.html" class="article-link">📄 Fix "Objects are not valid as a React child"</a>
-                <a href="posts/react/useeffect-warning.html" class="article-link">📄 Solved: useEffect dependency array missing warning</a>
-                
-                <!-- Jab naya post banao, yahan add karna -->
-            </div>
-        </section>
+        <div class="grid">
+            
+            <!-- Category 1: JavaScript -->
+            <a href="JavaScript.html" class="card" style="border-left: 5px solid #f59e0b;">
+                <div>
+                    <div class="card-header">
+                        <span class="badge" style="background:#fef3c7; color:#d97706;">Core Concept</span>
+                    </div>
+                    <h2>JavaScript</h2>
+                    <p>Logic building, ES6+, Loops, Arrays, and runtime error fixes.</p>
+                </div>
+                <div class="read-more">View All JS Posts →</div>
+            </a>
 
-        <!-- Node Section -->
-        <section id="node" class="topic-section">
-            <div class="topic-header">
-                <h2 class="topic-title">Node.js & Backend</h2>
-                <span class="topic-count">1 Article</span>
-            </div>
-            <div class="article-list">
-                <a href="posts/node/port-error.html" class="article-link">📄 Error: listen EADDRINUSE: address already in use</a>
-            </div>
-        </section>
+            <!-- Category 2: React.js -->
+            <a href="react.html" class="card" style="border-left: 5px solid #3b82f6;">
+                <div>
+                    <div class="card-header">
+                        <span class="badge react">Frontend</span>
+                    </div>
+                    <h2>React.js</h2>
+                    <p>Hooks, State Management, Router, and component logic.</p>
+                </div>
+                <div class="read-more">View All React Posts →</div>
+            </a>
 
-        <!-- AWS Section -->
-        <section id="aws" class="topic-section">
-            <div class="topic-header">
-                <h2 class="topic-title">AWS & Cloud</h2>
-                <span class="topic-count">1 Article</span>
-            </div>
-            <div class="article-list">
-                <a href="posts/aws/s3-error.html" class="article-link">📄 Fix AWS S3 "Access Denied" on public bucket</a>
-            </div>
-        </section>
+            <!-- Category 3: Node.js -->
+            <a href="node.html" class="card" style="border-left: 5px solid #22c55e;">
+                <div>
+                    <div class="card-header">
+                        <span class="badge node">Backend</span>
+                    </div>
+                    <h2>Node.js</h2>
+                    <p>Express, API development, Database connections, and Server errors.</p>
+                </div>
+                <div class="read-more">View All Node Posts →</div>
+            </a>
 
-        <!-- JS Section (Example) -->
-        
-
-
-        <section id="js" class="topic-section">
-    <div class="topic-header">
-        <h2 class="topic-title">JavaScript</h2>
-        <span class="topic-count">1 Article</span> <!-- 0 ko 1 kar do -->
-    </div>
-    <div class="article-list">
-        <!-- Naya link yahan daalo -->
-        <a href="posts/js/var-let-const.html" class="article-link">📄 Difference between var, let, and const</a>
-    </div>
-</section>
+            <!-- Category 4: Interview Prep -->
+            <a href="interview.html" class="card" style="border-left: 5px solid #ef4444;">
+                <div>
+                    <div class="card-header">
+                        <span class="badge" style="background:#fee2e2; color:#ef4444;">Career</span>
+                    </div>
+                    <h2>Interview Prep</h2>
+                    <p>Crack your job interview with top questions and answers.</p>
+                </div>
+                <div class="read-more">Start Preparing →</div>
+            </a>
 
 
 
+                <!-- Category 5: Interview Prep -->
 
+               <!-- Category: AWS -->
+            <a href="aws.html" class="card" style="border-left: 5px solid #f97316;">
+                <div>
+                    <div class="card-header">
+                        <span class="badge" style="background:#ffedd5; color:#ea580c;">Cloud</span>
+                    </div>
+                    <h2>AWS & Cloud</h2>
+                    <p>S3, EC2, Lambda deployment, and security fixes.</p>
+                </div>
+                <div class="read-more">View All AWS Posts →</div>
+            </a>
+           
 
-
-
-        <!-- Career Section Niche bana do -->
-<section id="career" class="topic-section">
-    <div class="topic-header">
-        <h2 class="topic-title">Interview Prep & Career</h2>
-        <span class="topic-count">New</span>
-    </div>
-    <div class="article-list">
-        <a href="posts/interview/react-questions.html" class="article-link">🎓 Top 20 React Interview Questions (2025)</a>
-        
-    </div>
-</section>
-
-
-
-
-
-
-
+        </div>
     </main>
 
     <!-- 4. DYNAMIC FOOTER -->
@@ -127,7 +114,6 @@
     <!-- 5. SCRIPTS -->
     <script src="assets/js/main.js"></script>
     <script>
-        // 0 pass kar rahe hain kyunki ye file root folder me hai
         loadHeader(0); 
         loadFooter(0);
     </script>
