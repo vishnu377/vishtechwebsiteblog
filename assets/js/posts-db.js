@@ -19,10 +19,10 @@ const blogPosts = [
     //---- post js ------
   {
         title: 'Difference between var, let, and const in JavaScript - Vishtech Fixes',
-        category: 'js',
+        category: 'JavaScript',
         readTime: '1 min',
         desc: 'Your server port is busy. Learn how to kill the process and restart your server instantly.',
-        link: 'posts/js/var-let-const.html',
+        link: 'posts/javascript/var-let-const.html',
         isNew: true
     },
     // --- POST 2: Node Port Error ---

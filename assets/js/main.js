@@ -13,6 +13,10 @@ function getPathPrefix(depth) {
 }
 
 // --- 1. DYNAMIC HEADER ---
+
+
+// File: assets/js/main.js
+
 function loadHeader(folderDepth = 0) {
     const prefix = getPathPrefix(folderDepth);
 
@@ -22,12 +26,21 @@ function loadHeader(folderDepth = 0) {
             <a href="${prefix}index.html">Vishtech<span>Fixes</span></a>
         </div>
         <div class="nav-links">
-            <!-- Topics page root par hai, to prefix lagega -->
-            <a href="${prefix}topics.html">All Topics</a>
-            <a href="${prefix}topics.html#react">React</a>
-            <a href="${prefix}topics.html#node">Node.js</a>
+
+        <a href="${prefix}topics.html">All Topics</a>
+
+            <!-- 1. JavaScript (Sabka Baap - Isliye pehle rakha) -->
+            <a href="${prefix}JavaScript.html">JavaScript</a>
+
+            <!-- 2. Frameworks & Backend -->
+            <a href="${prefix}react.html">React</a>
+            <a href="${prefix}node.html">Node.js</a>
             
-            <a href="${prefix}hire.html" class="hire-btn">Hire Me</a>
+           <!-- 3. Interviews (Highlighted) -->
+            <a href="${prefix}interview.html" style="color:#ef4444; font-weight:600;">Interviews</a>
+
+            
+            <!-- Hire Me HATA DIYA hai ✅ -->
         </div>
     </nav>
     `;
@@ -87,3 +100,11 @@ function loadRecentPosts() {
         container.innerHTML = html;
     }
 }
+
+
+
+
+
+
+
+
