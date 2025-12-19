@@ -60,7 +60,7 @@ function loadFooter(folderDepth = 0) {
             <a href="${prefix}privacy.html" style="margin:0 10px; color:#64748b;">Privacy</a> | 
             <a href="${prefix}terms.html" style="margin:0 10px; color:#64748b;">Terms</a>
         </div>
-        <p>&copy; 2024 Vishtech Services. Built for Developers.</p>
+        <p>&copy; 2025 Vishtech Services. Built for Developers.</p>
     </footer>
     `;
 
