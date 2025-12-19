@@ -18,14 +18,48 @@ const blogPosts = [
 
 
 
-    // --- POST 2: React Object Error ---
+    // --- POST 1: React Object Error ---
     {
-        title: 'How to fix "Objects are not valid as a React child" error',
+        title: 'How to Fix "Each child in a list should have a unique key prop" in React - Vishtech Fixes',
         category: 'React.js',
         readTime: '2 min',
-        desc: 'This usually happens when you try to render an object directly. Here is the quick fix code...',
+        desc: 'Getting the React Unique Key Prop warning? Learn why it happens and how to fix it with best practices and code examples. Step-by-step guide for developers....',
         // 👇 Link dhyan se dekho: folder structure ke hisaab se hai
-        link: 'posts/react/object-error.html', 
+        link: 'posts/react/fix-react-unique-key-error.html', 
+        isNew: true
+    },
+
+// --- POST 2: React Object Error ---
+    {
+        title: 'How to fix "Objects are not valid as a React child" - Vishtech Fixes',
+        category: 'React.js',
+        readTime: '2 min',
+        desc: 'Fix Objects are not valid as a React child error easily.',
+        // 👇 Link dhyan se dekho: folder structure ke hisaab se hai
+        link: 'posts/react/hook-error.html', 
+        isNew: true
+    },
+
+// --- POST 3: React Object Error ---
+    {
+        title: 'How to fix "Objects are not valid as a React child" - Vishtech Fixes',
+        category: 'React.js',
+        readTime: '2 min',
+        desc: 'Learn how to fix Objects are not valid as a React child error. This usually happens when you try to render an object directly in JSX....',
+        // 👇 Link dhyan se dekho: folder structure ke hisaab se hai
+        link: 'posts/react/oject-error.html', 
+        isNew: true
+    },
+
+// --- POST 4: React Object Error ---
+
+    {
+        title: 'How to Fix "Functions are not valid as a React child" - Vishtech Fixes',
+        category: 'React.js',
+        readTime: '2 min',
+        desc: 'Stuck with Functions are not valid as a React child error? Learn how to fix this common React rendering mistake with a real-life debugging story...',
+        // 👇 Link dhyan se dekho: folder structure ke hisaab se hai
+        link: 'posts/react/react-child-error.html', 
         isNew: true
     },
 
