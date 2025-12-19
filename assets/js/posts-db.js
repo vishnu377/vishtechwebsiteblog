@@ -47,7 +47,7 @@ const blogPosts = [
         readTime: '2 min',
         desc: 'Learn how to fix Objects are not valid as a React child error. This usually happens when you try to render an object directly in JSX....',
         // 👇 Link dhyan se dekho: folder structure ke hisaab se hai
-        link: 'posts/react/oject-error.html', 
+        link: 'posts/react/object-error.html', 
         isNew: true
     },
 
