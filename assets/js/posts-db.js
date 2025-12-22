@@ -8,11 +8,11 @@ const blogPosts = [
 
      //---- post1 javascript ------
   {
-        title: 'Difference between var, let, and const in JavaScript - Vishtech Fixes',
+        title: 'JavaScript Error Handling: My Journey & 2025 Trends - Vishtech Fixes',
         category: 'JavaScript',
         readTime: '1 min',
-        desc: 'Your server port is busy. Learn how to kill the process and restart your server instantly.',
-        link: 'posts/javascript/var-let-const.html',
+        desc: 'Master JavaScript Error Handling in 2025-26. Learn try-catch-finally and the viral Safe Assignment Operator (?=) with personal insights from Vishtech Fixes..',
+        link: 'posts/javascript/js-error-handling.html',
         isNew: true
     },
 
